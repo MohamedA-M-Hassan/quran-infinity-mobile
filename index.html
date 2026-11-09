@@ -4,31 +4,59 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Quran Infinity</title>
+  <meta name="theme-color" content="#156858">
+  <link rel="icon" href="logo.png">
   <style>
-    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 0 auto; padding: 24px; line-height: 1.8; color: #1b2b26; }
-    h1 { color: #0f6e56; }
-    .download { display: inline-block; background: #0f6e56; color: #fff; padding: 12px 28px; border-radius: 24px; text-decoration: none; font-size: 1.1em; }
-    li { margin-bottom: 6px; }
+    :root { --brand: #156858; --ink: #1b2b26; --soft: #eef5f3; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, "Segoe UI", Tahoma, sans-serif; line-height: 1.8; color: var(--ink); background: #fff; }
+    .hero { background: var(--brand); color: #fff; text-align: center; padding: 40px 24px 48px; }
+    .hero img { width: 160px; height: 160px; display: block; margin: 0 auto 8px; }
+    .hero h1 { margin: 0 0 8px; font-size: 1.8em; letter-spacing: .5px; }
+    .hero p { margin: 0 auto 24px; max-width: 460px; color: rgba(255,255,255,.85); }
+    .download { display: inline-block; background: #fff; color: var(--brand); padding: 12px 32px; border-radius: 28px; text-decoration: none; font-size: 1.1em; font-weight: 600; }
+    main { max-width: 640px; margin: 0 auto; padding: 8px 24px 48px; }
+    h2 { color: var(--brand); margin-top: 36px; }
+    .card { background: var(--soft); border-radius: 16px; padding: 4px 20px 8px; }
+    ul, ol { padding-inline-start: 22px; }
+    li { margin-bottom: 10px; }
+    li strong { color: var(--brand); }
   </style>
 </head>
 <body>
-  <h1>Quran Infinity</h1>
-  <p>تلاوة هادئة للقرآن على موبايلك. بتشتغل بصوت واطي، وبتسكت لما أي صوت تاني يشتغل، وبترجع لوحدها لما يخلص.</p>
-  <p><a class="download" href="https://github.com/MohamedA-M-Hassan/quran-infinity-mobile/releases/latest/download/Quran-Infinity.apk">تحميل التطبيق (APK)</a></p>
+  <header class="hero">
+    <img src="logo.png" alt="Quran Infinity">
+    <h1>Quran Infinity</h1>
+    <p>تلاوة هادئة للقرآن . بتسكت لما أي صوت تاني يشتغل، وبترجع لوحدها لما يخلص.</p>
+    <a class="download" href="https://github.com/MohamedA-M-Hassan/quran-infinity-mobile/releases/latest/download/Quran-Infinity.apk">تحميل التطبيق (APK)</a>
+  </header>
 
-  <h2>الجديد</h2>
-  <ul>
-    <li>رابط «رأيك يهمنا».</li>
-    <li>تنبيه بالتحديثات الجديدة.</li>
-    <li>إصلاح التشغيل في الخلفية على أندرويد ١٧.</li>
-    <li>البسملة قبل كل سورة، والتلاوة بتسكت لما تسجّل أو تسمع رسالة صوتية.</li>
-  </ul>
+  <main>
+    <h2>عن التطبيق</h2>
+    <div class="card">
+      <ul>
+        <li><strong>بيشتغل لوحده:</strong> بيسكت لما أي صوت تاني يشتغل عندك (مكالمة، رسالة صوتية، فيديو)، وبيرجع يكمل لوحده لما يخلص.</li>
+        <li><strong>بالآيات، للحفظ:</strong> اختار من أي سورة وآية لأي سورة وآية، والتطبيق بيكرر المدى ده من غير ما تلمسه، فمناسب لمن يريد الحفظ.</li>
+      </ul>
+    </div>
 
-  <h2>طريقة التثبيت</h2>
-  <ol>
-    <li>حمّل الملف من الزرار اللي فوق.</li>
-    <li>افتحه، ولو الموبايل سأل عن «تثبيت من مصدر غير معروف» وافق للمتصفح.</li>
-    <li>اضغط «تثبيت»، وبعدين افتح التطبيق ووافق على الإشعارات.</li>
-  </ol>
+    <h2>الجديد</h2>
+    <div class="card">
+      <ul>
+        <li><strong>قارئ متنوع:</strong> اختار «متنوع»، وكل سورة هتتقرأ بصوت قارئ مختلف، ومن غير ما قارئ يتكرر جنب نفسه. واسم القارئ بيظهر جنب «جارٍ التلاوة».</li>
+        <li><strong>قائمة قراء أنضف:</strong> رتبنا القراء وشلنا اللي تسجيلاتهم مش مضبوطة، وكتبنا الأسماء بالعربي.</li>
+        <li><strong>تحميل أذكى:</strong> التطبيق بينزّل السورة اللي بتسمعها والسورة اللي بعدها بس، فمهما كان المدى طويل مش هيملا موبايلك.</li>
+        <li><strong>مساحة محسوبة:</strong> لو الملفات المحمّلة وصلت حد معيّن، التطبيق بيمسح لوحده الأقدم سماعاً، من غير ما تحتاج تعمل حاجة.</li>
+        <li><strong>شكل أحلى:</strong> شاشة التحديث بقت بنفس لوجو التطبيق وألوانه.</li>
+      </ul>
+    </div>
+
+    <h2>طريقة التثبيت</h2>
+    <ol>
+      <li>حمّل الملف من الزرار اللي فوق.</li>
+      <li>افتحه، ولو الموبايل سأل عن «تثبيت من مصدر غير معروف» وافق للمتصفح.</li>
+      <li>اضغط «تثبيت»، وبعدين افتح التطبيق ووافق على الإشعارات.</li>
+    </ol>
+  </main>
 </body>
 </html>
